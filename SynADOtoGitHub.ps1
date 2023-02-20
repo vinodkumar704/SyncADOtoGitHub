@@ -1,18 +1,18 @@
 param(
      [Parameter()]
-     [string]$GitHubDestinationPAT,
+     [string]$GitHubDestinationPAT = "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",
  
      [Parameter()]
-     [string]$ADOSourcePAT,
+     [string]$ADOSourcePAT = "zbaykxtbsnfmmm33islv5rg4tpdzleh7nvgbbnjod3bmenwrbipa",
      
      [Parameter()]
-     [string]$AzureRepoName,
+     [string]$AzureRepoName = "nestjs-project",
      
      [Parameter()]
-     [string]$ADOCloneURL,
+     [string]$ADOCloneURL = "dev.azure.com/BrainvireInfo/IT-Project/_git/nestjs-project",
      
      [Parameter()]
-     [string]$GitHubCloneURL
+     [string]$GitHubCloneURL = "github.com/vinodkumar704/nestjs-project.git"
  )
 
 # Write your PowerShell commands here.
