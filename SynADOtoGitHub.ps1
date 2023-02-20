@@ -3,25 +3,16 @@ param(
      [string]$GitHubDestinationPAT,
  
      [Parameter()]
-     [string]$ADOSourcePAT,
-     
-     [Parameter()]
-     [string]$AzureRepoName,
-     
-     [Parameter()]
-     [string]$ADOCloneURL,
-     
-     [Parameter()]
-     [string]$GitHubCloneURL
+     [string]$ADOSourcePAT
  )
 
 # Write your PowerShell commands here.
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
 Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
-#$AzureRepoName = "CloudQuickLabsADO"
-#$ADOCloneURL = "dev.azure.com/CloudQuickLabs/CloudQuickLabsADO/_git/CloudQuickLabsADO"
-#$GitHubCloneURL = "github.com/RekhuGopal/CloudQuickLabsADO.git"
+$AzureRepoName = "nest-project"
+$ADOCloneURL = "BrainvireInfo@dev.azure.com/BrainvireInfo/IT-Project/_git/nestjs-project"
+$GitHubCloneURL = "github.com/vinodkumar704/nestjs-project.git"
 $stageDir = pwd | Split-Path
 Write-Host "stage Dir is : $stageDir"
 $githubDir = $stageDir +"\"+"gitHub"
