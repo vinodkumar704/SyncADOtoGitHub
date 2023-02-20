@@ -10,6 +10,6 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          .\SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }} -AzureRepoName $($object.AZUREREPONAME)  -ADOCloneURL $($object.AADOCLONEURL)  -GitHubCloneURL  $($object.GITHUBCLONEURL)
+          .\SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }} -AzureRepoName $($object.AZUREREPONAME)  -ADOCloneURL $($object.ADOCLONEURL)  -GitHubCloneURL  $($object.GITHUBCLONEURL)
             write-host "---------------------------------------------------------------------------------------------------"
            }
