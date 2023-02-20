@@ -5,11 +5,9 @@ on:
   
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     steps:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          .\SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }} -AzureRepoName $($object.AZUREREPONAME)  -ADOCloneURL $($object.ADOCLONEURL)  -GitHubCloneURL  $($object.GITHUBCLONEURL)
-            write-host "---------------------------------------------------------------------------------------------------"
-           }
+          ./SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }}
