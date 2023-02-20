@@ -36,10 +36,6 @@ if(!(Test-Path -path $githubDir))
   Set-Location $githubDir
   git clone --mirror $sourceURL
 }
-else
-{
-  Write-Host "The given folder path $githubDir already exists";
-}
 Set-Location $destination
 Write-Output '*****Git removing remote secondary****'
 git remote rm secondary
