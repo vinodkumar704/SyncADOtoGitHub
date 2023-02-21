@@ -36,12 +36,10 @@ if(!(Test-Path -path $githubDir))
   Set-Location $githubDir
   git clone --mirror $sourceURL
 }
-$src = '\\sgblon340012\O365\Remove-PreviousOfficeInstalls'
-$dst = "\\${computer}\C$\temp200718"
-if (-not (Test-Path -LiteralPath $dst)) {
-    New-Item -Type Directory -Path $dst | Out-Null
+if (-not (Test-Path -LiteralPath $destination)) {
+    New-Item -Type Directory -Path $destination | Out-Null
 }
-Copy-Item -Path $src -Destination "${dst}\" -Force -Recurse -Verbose
+Copy-Item -Path $sourceURL -Destination "${destination}\" -Force -Recurse -Verbose
 Set-Location $destination
 Write-Output '*****Git removing remote secondary****'
 git remote rm secondary
