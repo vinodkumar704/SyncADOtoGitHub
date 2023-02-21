@@ -11,7 +11,7 @@ Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
 Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
 $AzureRepoName = "nestjs-project"
-$ADOCloneURL = "BrainvireInfo@dev.azure.com/BrainvireInfo/IT-Project/_git/nestjs-project"
+$ADOCloneURL = "dev.azure.com/BrainvireInfo/IT-Project/_git/nestjs-project"
 $GitHubCloneURL = "github.com/vinodkumar704/nestjs-project.git"
 $stageDir = pwd | Split-Path
 Write-Host "stage Dir is : $stageDir"
