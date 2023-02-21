@@ -36,10 +36,6 @@ if(!(Test-Path -path $githubDir))
   Set-Location $githubDir
   git clone --mirror $sourceURL
 }
-if (-not (Test-Path -LiteralPath $destination)) {
-    New-Item -Type Directory -Path $destination | Out-Null
-}
-Copy-Item -Path $sourceURL -Destination "${destination}\" -Force -Recurse -Verbose
 Set-Location $destination
 Write-Output '*****Git removing remote secondary****'
 git remote rm secondary
