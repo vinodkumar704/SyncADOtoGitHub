@@ -51,12 +51,12 @@ git remote add --mirror=fetch secondary $destURL
 Write-Output '*****Git fetch origin****'
 git fetch $sourceURL
 Write-Output '*****Git push secondary****'
-#git remote set-url origin $destURLSetURL
-#git push secondary  --all -f
-#Write-Output '**Azure Devops repo synced with Github repo**'
-#Set-Location $stageDir
-#if((Test-Path -path $githubDir))
-#{
- #Remove-Item -Path $githubDir -Recurse -force
-#}
-#write-host "Job completed"
+git remote set-url origin $destURLSetURL
+git push secondary  --all -f
+Write-Output '**Azure Devops repo synced with Github repo**'
+Set-Location $stageDir
+if((Test-Path -path $githubDir))
+{
+ Remove-Item -Path $githubDir -Recurse -force
+}
+write-host "Job completed"
