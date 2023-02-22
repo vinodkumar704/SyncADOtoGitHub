@@ -26,7 +26,7 @@ write-host "source URL : $sourceURL"
 #$destURL = "https://$(Vinod@1098)"+"@"+"$($GitHubCloneURL)"
 write-host "tocken : $GitHubDestinationPAT"
 write-host "clone URL : $GitHubCloneURL"
-$destURL = "https://" + $($GitHubDestinationPAT) +"@"+"$($GitHubCloneURL)"
+$destURL = "https://" + $(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) +"@"+"$($GitHubCloneURL)"
 write-host "dest URL : $destURL"
 #Check if the parent directory exists and delete
 if((Test-Path -path $githubDir))
