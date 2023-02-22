@@ -23,7 +23,7 @@ Write-Host "destination: $destination"
 $sourceURL = "https://$($ADOSourcePAT)"+"@"+"$($ADOCloneURL)"
 write-host "source URL : $sourceURL"
 #Please make sure, you remove https from github-repo-clone-url
-#$destURL = "https://$(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)"+"@"+"$($GitHubCloneURL)"
+#$destURL = "https://$(Vinod@1098)"+"@"+"$($GitHubCloneURL)"
 write-host "tocken : $GitHubDestinationPAT"
 write-host "clone URL : $GitHubCloneURL"
 $destURL = "https://" + $($GitHubDestinationPAT) +"@"+"$($GitHubCloneURL)"
