@@ -50,7 +50,6 @@ git remote add --mirror=fetch secondary $destURL
 Write-Output '*****Git fetch origin****'
 git fetch $sourceURL
 Write-Output '*****Git push secondary****'
-export GIT_TERMINAL_PROMPT=0
 git remote set-url origin $destURLSetURL
 git push secondary  --all -f
 Write-Output '**Azure Devops repo synced with Github repo**'
