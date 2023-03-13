@@ -10,4 +10,4 @@ jobs:
       - name: Check out repo        
         uses: actions/checkout@v2
       - run: |
-          ./SyncADOtoGitHubSingleBranch.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }}
+          ./SyncADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }}
