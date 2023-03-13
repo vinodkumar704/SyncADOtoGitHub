@@ -60,5 +60,5 @@ git push $destinationRepo $branchName
 
 # Clean up the temporary directory
 Write-Host "Cleaning up"
-Remove-Item -Recurse -Force $tempDir
+#Remove-Item -Recurse -Force $tempDir
 
