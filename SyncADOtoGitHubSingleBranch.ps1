@@ -37,7 +37,7 @@ $destinationRepo = $destURL
 $branchName = "main"
 
 # Set the path to a temporary directory where the clone will be created
-$tempDir = $githubDir
+$tempDir = "C:\temp"
 
 # Clone the source repository
 Write-Host "Cloning $sourceRepo to $tempDir"
